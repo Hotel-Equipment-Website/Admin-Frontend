@@ -1,0 +1,811 @@
+.item-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95vw;
+    height: 85vh;
+    background: #b0b7c2; 
+    margin-top: 10px;
+    border-radius: 10px;
+
+    .head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 98%;
+        height: 10vh;
+        background-color: #ffffff;
+        margin-top: 10px;
+        border-radius: 6px;
+
+        h2 {
+            padding-left: 50px;
+        }
+
+        .icon {
+            margin-right: 20px;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .body {
+        display: flex;
+        flex-direction: column;
+        width: 98%;
+        height: 70vh;
+        align-items: center;
+        // justify-content: center;
+        background-color: rgb(248, 206, 206);
+        margin-top: 10px;
+        overflow-y: auto;
+
+        .card-fram {
+            display: flex;
+            justify-content: center;
+            width: 98%;
+            // height: 15vh;
+            height: 18vh;
+            // background-color: red;
+            background-color: white;
+            border-radius: 10px;
+            margin-top: 5px;
+
+            .image-container {
+                width: 140px;
+                height: 100%;
+                background-color: blue;
+                margin-left: 10px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .nameOfCard {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+                width: 800px;
+                // background-color: #8C7B7B;
+            }
+
+            .crud-function {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .list-view {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100px;
+                    height: 100%;
+                    // background-color: pink;
+
+                    .list-view-btn {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 90%;
+                        height: 90%;
+                        background-color: rgb(0, 89, 255);
+                        border-radius: 6px;
+                        color: white;
+                        border: none;
+
+                        &:hover {
+                            cursor: pointer;
+                            background-color: blue;
+                        }
+                    }
+                }
+
+                .crud-btns {
+                    width: 282px;
+                    height: 100%;
+                    // background-color: rgb(81, 255, 0);
+
+                    .top {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 100%;
+                        height: 50%;
+                        // background-color: red;
+
+                        .view-btn {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 96%;
+                            height: 80%;
+                            background-color: rgb(167, 216, 93);
+                            border-radius: 6px;
+
+                            &:hover {
+                                cursor: pointer;
+                                background-color: rgb(190, 255, 59);
+                            }
+                        }
+                    }
+
+                    .bottom {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 100%;
+                        height: 50%;
+                        // background-color: green;
+
+                        .update {
+                            color: white;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 48%;
+                            height: 90%;
+                            background-color: rgb(46, 46, 165);
+                            border-radius: 6px;
+                            margin-right: 4px;
+
+                            &:hover {
+                                cursor: pointer;
+                                background-color: blue;
+                            }
+                        }
+
+                        .delete {
+                            color: white;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 48%;
+                            height: 90%;
+                            background-color: rgb(238, 78, 78);
+                            border-radius: 6px;
+
+                            &:hover {
+                                cursor: pointer;
+                                background-color: red;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .cardView-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 100vh;
+                background-color: rgba(0, 0, 0, 0.438);
+                position: fixed;
+                top: 0;
+                z-index: 10;
+            
+                .cardView {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 30%;
+                    height: 60vh;
+                    background-color: white;
+                    border-radius: 10px;
+            
+                    .close-icon {
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-end;
+                        width: 100%;
+                        height: 8%;
+            
+                        .icon {
+                            padding-right: 5px;
+                            // padding-top: 5px;
+            
+                            &:hover {
+                                transform: scale(1.1);
+                                cursor: pointer;
+                            }
+                        }
+                    }
+            
+                    .card-section {
+                        width: 100%;
+                        height: 92%;
+                        // background-color: red;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+            
+                        .view-card-fram{
+                            width: 250px;
+                            height: 300px;
+                            // border: 1px solid black;
+                            // box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                            box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+                            border-radius: 10px;
+            
+                            .image-section {
+                                width: 100%;
+                                height: 80%;
+                                border-radius: 10px 10px 0 0;
+            
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    border-radius: 10px 10px 0 0;
+                                }
+                            }
+
+                            .name-section {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 100%;
+                                // background-color: red;
+                                
+                                h3 {
+                                    padding-left: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .categoryUpdate-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 100vh;
+                background-color: rgba(0, 0, 0, 0.438);
+                position: fixed;
+                top: 0;
+                z-index: 10;
+            
+                .card-container {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    width: 40%;
+                    height: 40vh;
+                    background-color: white;
+                    border-radius: 10px;
+            
+                    .header {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 100%;
+                        height: 10vh;
+                        // background-color: red;
+                    }
+            
+                    form {
+                        width: 100%;
+                        height: 30vh;
+                        // background-color: blue;
+            
+                        .input-section {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            width: 100%;
+                            height: 20vh;
+                            // background-color: yellow;
+            
+                            .input-wrapper {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                justify-content: center;
+                                width: 100%;
+            
+                                .category-name {
+                                    border-radius: 6px;
+                                    width: 88%;
+                                    height: 30px;
+                                    border: 0.1px solid black;
+                                    padding-left: 10px;
+                                }
+            
+                                .image-holder {
+                                    margin-top: 10px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: flex-start;
+                                    width: 90%;
+                                    height: 30px;
+                                    border: solid 0.1px black;
+                                    border-radius: 6px;
+            
+                                    input {
+                                        padding-left: 10px;
+                                    }
+                                }
+                            }
+                        }
+            
+                        .submission-btn {
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-end;
+                            width: 100%;
+                            height: 10vh;
+                            // background-color: rgb(54, 255, 47);
+            
+                            .cancel-btn {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 150px;
+                                height: 40px;
+                                // background-color: red;
+                                border: solid 1px red;
+                                border-radius: 10px;
+                                // color: white;
+                                margin-right: 28px;
+            
+                                &:hover {
+                                    background-color: red;
+                                    color: white;
+                                    cursor: pointer;
+                                }
+                            }
+            
+                            .submit-btn {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                border: solid 1px rgb(3, 91, 206);
+                                width: 150px;
+                                height: 40px;
+                                // background-color: rgb(3, 91, 206);
+                                border-radius: 10px;
+                                // color: white;
+                                margin-right: 10px;
+            
+                                &:hover {
+                                    background-color: rgb(3, 91, 206);
+                                    color: white;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .description-contaier {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 100vh;
+                background-color: rgba(0, 0, 0, 0.397);
+                position: fixed;
+                top: 0;
+                z-index: 10;
+            
+                .card-container {
+                    display: flex;
+                    width: 70%;
+                    height: 70vh;
+                    // background-color: rgb(119, 79, 79);
+                    background-color: white;
+                    border-radius: 10px;
+            
+                    .maindetail {
+                        display: flex;
+                        width: 95%;
+            
+                        .left-img {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 40%;
+                            height: 100%;
+                            border: solid black 1px;
+                            border-radius: 10px 10px 10px 10px;
+                            overflow: hidden;
+                            background-position: center;
+                            background-size: cover;
+            
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                // object-fit: cover;
+            
+                            }
+                        }
+            
+                        .right-descriptino {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 60%;
+                            height: 100%;
+                            // background-color: beige;
+            
+                            .main-detailTag {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: flex-start;
+                                width: 80%;
+                                // background-color: red;
+            
+                                p {
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                    padding: 10px;
+                                }
+            
+                                .inquire-section {
+                                    // background-color: red;
+                                    display: flex;
+                                    align-items: center;
+                                    // justify-content: center;
+                                    margin-top: 15px;
+            
+                                    .whatsapp {
+                                        color: green;
+            
+                                        &:hover {
+                                            cursor: pointer;
+                                            transform: scale(1.2);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+            
+                    .closebtn-fram {
+                        display: flex;
+                        justify-content: flex-end;
+                        // background-color: yellow;
+                        width: 5%;
+            
+                        .close-btn {
+            
+                            &:hover {
+                                cursor: pointer;
+                                transform: scale(1.1);
+                            }
+                        }
+                    }
+                }
+            }
+
+            .update-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 100vh;
+                // transform: translate(-50%, -50%);
+                background-color: rgba(0, 0, 0, 0.438);
+                position: fixed;
+                top: 0;
+                z-index: 10;
+            
+                .card-container {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    width: 40%;
+                    height: 56vh;
+                    background-color: white;
+                    border-radius: 10px;
+            
+                    .header {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 100%;
+                        height: 10vh;
+                        // background-color: red;
+                    }
+            
+                    form {
+                        width: 100%;
+                        height: 50vh;
+                        // background-color: blue;
+            
+                        .input-section {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            width: 100%;
+                            height: 35vh;
+                            // background-color: yellow;
+            
+                            .input-wrapper {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                justify-content: center;
+                                width: 100%;
+            
+                                .category-name, .item-name, .brand, .description {
+                                    border-radius: 6px;
+                                    width: 88%;
+                                    height: 30px;
+                                    border: 0.1px solid black;
+                                    padding-left: 10px;
+                                    margin-top: 10px;
+            
+                                    input {}
+                                }
+            
+                                .image-holder {
+                                    margin-top: 10px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: flex-start;
+                                    width: 90%;
+                                    height: 30px;
+                                    border: solid 0.1px black;
+                                    border-radius: 6px;
+            
+                                    input {
+                                        padding-left: 10px;
+                                    }
+                                }
+                            }
+                        }
+            
+                        .submission-btn {
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-end;
+                            width: 100%;
+                            height: 10vh;
+                            // background-color: rgb(54, 255, 47);
+            
+                            .cancel-btn {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 150px;
+                                height: 40px;
+                                // background-color: red;
+                                border: solid 1px red;
+                                border-radius: 10px;
+                                // color: white;
+                                margin-right: 28px;
+            
+                                &:hover {
+                                    background-color: red;
+                                    color: white;
+                                    cursor: pointer;
+                                }
+                            }
+            
+                            .submit-btn {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                border: solid 1px rgb(3, 91, 206);
+                                width: 150px;
+                                height: 40px;
+                                // background-color: rgb(3, 91, 206);
+                                border-radius: 10px;
+                                // color: white;
+                                margin-right: 10px;
+            
+                                &:hover {
+                                    background-color: rgb(3, 91, 206);
+                                    color: white;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .itemUpdate-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.438);
+        position: fixed;
+        top: 0;
+        z-index: 10;
+    
+        .card-container {
+            width: 700px;
+            height: 340px;
+            background-color: white;
+            border-radius: 10px;
+    
+            .header {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 60px;
+                // background-color: red;
+            }
+    
+            form {
+    
+                .body {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    height: 220px;
+                    // background-color: rgb(43, 255, 0);
+    
+                    .catagory-name {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        height: 40px;
+                        width: 100%;
+                        // background-color: blue;
+    
+                        h4 {
+                            padding-left: 80px;
+                        }
+    
+                        input {
+                            margin-right: 80px;
+                            height: 22px;
+                            width: 300px;
+                        }
+                    }
+    
+                    .item-name {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        height: 40px;
+                        width: 100%;
+                        // background-color: red;
+    
+                        h4 {
+                            padding-left: 80px;
+                            height: 25px;
+                        }
+    
+                        input {
+                            margin-right: 80px;
+                            height: 22px;
+                            width: 300px;
+                        }
+                    }
+    
+                    .brand {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        height: 40px;
+                        width: 100%;
+                        // background-color: rgb(255, 115, 0);
+    
+                        h4 {
+                            padding-left: 80px;
+                        }
+    
+                        input {
+                            margin-right: 80px;
+                            height: 22px;
+                            width: 300px;
+                        }
+                    }
+    
+                    .description {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        height: 40px;
+                        width: 100%;
+                        // background-color: rgb(255, 0, 221);
+    
+                        h4 {
+                            padding-left: 80px;
+                        }
+    
+                        input {
+                            margin-right: 80px;
+                            height: 22px;
+                            width: 300px;
+                        }
+                    }
+    
+                    .image-upload {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        height: 40px;
+                        width: 100%;
+                        // background-color: rgb(255, 0, 221);
+    
+                        .image-container {
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                            height: 30px;
+                            width: 305px;
+                            border: solid 0.1px black;
+                            // border-radius: 6px;
+                            margin-right: 80px;
+                        }
+    
+                        h4 {
+                            padding-left: 80px;
+                        }
+                    }
+                }
+    
+                .submission-btn {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    height: 10vh;
+                    // background-color: rgb(54, 255, 47);
+    
+                    .cancel-btn {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 130px;
+                        height: 30px;
+                        // background-color: red;
+                        border: solid 1px red;
+                        border-radius: 10px;
+                        // color: white;
+                        // margin-right: 100px;
+                        margin-left: 10px;
+    
+                        &:hover {
+                            background-color: red;
+                            color: white;
+                            cursor: pointer;
+                        }
+                    }
+    
+                    .submit-btn {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border: solid 1px rgb(3, 91, 206);
+                        width: 130px;
+                        height: 30px;
+                        // background-color: rgb(3, 91, 206);
+                        border-radius: 10px;
+                        // color: white;
+                        margin-left: 10px;
+    
+                        &:hover {
+                            background-color: rgb(3, 91, 206);
+                            color: white;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

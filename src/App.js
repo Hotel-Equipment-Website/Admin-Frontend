@@ -1,9 +1,10 @@
 import './App.css';
+import RoutesContainer from './Routes/RoutesContainer';
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello World</h1>
+      <RoutesContainer />
     </div>
   );
 }
